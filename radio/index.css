@@ -1,0 +1,372 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Caramel&family=Dancing+Script:wght@400;500&family=Mochiy+Pop+One&family=Nunito&family=PT+Sans&family=Poppins:ital@0;1&family=Qwitcher+Grypen&family=Rancho&family=Righteous&family=Roboto+Mono:wght@500&family=Rubik+Gemstones&family=Rubik+Puddles&family=Russo+One&family=Satisfy&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 70%;
+    height: 90vh;
+    overflow: hidden;
+ background-color: rgba(214, 231, 214, 0.698);
+    margin: auto;
+    margin-top: 2rem;
+    position: relative;
+}
+
+
+.stool_top{
+    width: 50%;
+    height: 12px;
+    position: absolute;
+  background-color: black;
+  box-shadow: inset rgb(255, 255, 255) 2px 3px 7px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 25rem;
+    border-radius: 5px;
+    z-index: 200;
+}
+.stand_leg{
+    width: 12px;
+    height: 7rem;
+    box-shadow: inset white 2px 2px 10px;
+    background-color: black;
+    transform: rotate(40deg);
+    z-index: 19;
+    position: absolute;
+    left: 15rem;
+bottom: 0.5rem;
+    margin: auto;
+    border-radius: 5px;
+}
+.stand_leg1{
+    width: 12px;
+    height: 7rem;
+    box-shadow: inset white -2px 2px 10px;
+    background-color: black;
+    transform: rotate(-40deg);
+    z-index: 19;
+    position: absolute;
+    right: 15rem;
+bottom: 0.5rem;
+    margin: auto;
+    border-radius: 5px;
+}
+
+/* radio............ */
+.radio_outer{
+    width: 48%;
+    height: 17rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 8rem;
+    border-radius: 10px;
+    background-color: rgba(58, 208, 203, 0.784);
+}
+.radio_inner{
+overflow: hidden;
+    width: 93%;
+    height: 15rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 1rem;
+    border-radius: 10px;
+    background-color: rgb(249, 249, 249);
+    box-shadow: inset rgba(0, 0, 0, 0.708) -00px 15px 20px;
+}
+/* radio grill */
+.animate{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    /* border-radius:50% ; */
+    z-index: 1;
+    transform: translate(-50% -50%);
+    animation:  vibgor 3s linear infinite;
+    transition: 0.5s  ease-in-out;
+}
+@keyframes vibgor{
+    10%{
+        box-shadow:inset rgb(255, 0, 153) 10px 11px 50px 10px;
+    }
+    30%{
+        box-shadow:inset rgb(251, 255, 0) 10px 10px 30px 10px; 
+    }
+    40%{
+        box-shadow:inset rgba(0, 204, 255, 0.868) 10px 10px 30px 10px; 
+    }
+    50%{
+        transform: scale(3.5);
+        box-shadow:inset rgba(0, 255, 72, 0.186) 10px 10px 30px;  
+    }
+}
+.radio_gril{
+    width: 100%;
+    height: 7.5rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    z-index: 2;
+    background-color: rgb(0, 0, 0);
+}
+.gril{
+    width: 2px;
+    height: 130px;
+    background-color: rgb(255, 255, 255);
+    transform: skew(-25deg);
+}
+.radio_verti_grill{
+    display: flex;
+    justify-content: space-between;
+    width: 120%;
+    height: 8rem;
+    left: -2rem;
+    top:0rem;
+    position: absolute;
+    z-index: 1;
+}
+.radio_horiz_grill{
+    display: flex;
+    justify-content: space-between;
+    width: 120%;
+    height: 10rem;
+    left: -3rem;
+    position: absolute; 
+    z-index: 1; 
+}
+.slope_gril{
+    width: 2px;
+    height: 120px;
+    background-color: rgb(239, 239, 239);
+    transform: skew(25deg);  
+}
+.shadow_top{
+    width: 100%;
+    height: 100%;
+  box-shadow: inset rgba(0, 0, 0, 0.907) 0px 20px 30px, inset rgba(249, 249, 249, 0.233) -30px -20px 20px;
+    z-index: 2;
+}
+.middel_bar{
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(58, 208, 203, 0.317);
+    overflow: hidden;
+}
+.midddle_line{
+    width: 100%;
+    height: 2px solid;
+    border: 1px solid  transparent;
+    box-shadow: rgba(0, 0, 0, 0.892) 1px 1px 3px;
+  
+}
+.bottom_btm_box{
+    width: 100%;
+    height:6.2rem;
+    background-color: rgb(57, 41, 41);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+}
+.scroll_btn_box{
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+
+.circle_btn{
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    border: 2px solid rgb(79, 74, 74);;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 1rem;
+    background-color: rgb(159, 156, 154);
+    box-shadow: black -3px 1px 10px;
+    border-style: dashed;
+}
+.circle_btn::before{
+    content: "";
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    position: absolute;
+    left: 0rem;
+    right: 0;
+    margin: auto;
+    top: 0.16rem;
+    box-shadow: black -1px 1px 3px;
+    background-color: rgba(208, 197, 136, 0.593);
+}
+.inner_circle_btn{
+    width: 50%;
+    height: 50%;
+    border: 1px solid rgba(90, 86, 86, 0.467);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+    top: 1rem;
+    border-style: dashed;
+    box-shadow: black -1px 1px 4px;
+
+}
+.inner_circle_btn::before{
+    content: "";
+    width: 88%;
+    height: 88%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+    top: 0.12rem;
+    box-shadow: inset rgba(255, 255, 255, 0.295) -2px 2px 4px 1px;
+   
+}
+.arrow_border{
+    width: 80%;
+    height: 80%;
+    border: 1px solid grey;
+    border-radius: 50%;
+    border-top: none;
+    border-right: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0.2rem;
+    box-shadow: rgba(0, 0, 0, 0.839) -2px 2px 5px;
+}
+.scale_bar_box{
+    width: 70%;
+    height: 100%;
+    position: relative;
+}
+.tune_scale{
+    width: 90%;
+    height: 4.2rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 20px;
+    background-color: rgba(245, 245, 157, 0.52);
+overflow: hidden;
+padding-left: 10px;
+padding-right: 10px;
+box-shadow: inset black -2px 2px 7px,inset rgba(255, 255, 255, 0.857) -2px -2px 10px;
+}
+.tune_scale>div{
+    width: 100%;
+    height: 30px;
+}
+.scale_sub_first{
+    border-bottom: 2px solid;
+}
+.scale_sub_sec{
+    border-top: 2px solid;
+}
+
+.scale_border{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.scale_bar_pointer{
+    width: 2px ;
+    height: 10px;
+    background-color: black;
+    border-radius: 5px;
+}
+.sacle_reading{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    font-family: sans-serif;
+    justify-content: space-between;
+    font-size: 0.6rem;
+    font-weight: 600;
+    align-items: center;
+    /* margin-top: 5px; */
+
+}
+.switch_bar{
+    width: 50%;
+    height: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.scroll_btn_box>p{
+    position: absolute;
+    bottom: 0;
+    color: rgba(231, 231, 231, 0.874);
+    font-size: 0.5rem;font-family: sans-serif;
+    left: 2rem;
+
+}
+.single_switch{
+    width: 10%;
+    height: 100%;
+background-color: white;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    box-shadow: inset black -01px 1px 4px;
+    margin-left: 1.5px;
+}
+.btm_shadow{
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    left: -15rem;
+    right: 0;
+    margin: auto;
+    bottom: 4rem;
+    border-radius: 20px;
+    transform: skew(20deg);
+    box-shadow: rgba(0, 0, 0, 0.145) 1px 1px 30px 10px,
+    inset rgba(0, 0, 0, 0.119) 20px 20px 50px 100px;
+}
+.container h2{
+    font-size: 6rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.958);
+    text-shadow: rgb(80, 229, 229) 1px 2px 3px;
+font-family: 'Poppins', sans-serif;
+}
